@@ -215,8 +215,10 @@
 				D467F6B52B4E881D007211DC /* Assets.xcassets */,
 				D467F6B72B4E881D007211DC /* Preview Content */,
 			);
+			indentWidth = 2;
 			path = "bing-bong Watch App";
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		D467F6B72B4E881D007211DC /* Preview Content */ = {
 			isa = PBXGroup;
@@ -732,6 +734,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "bing-bong";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -765,6 +768,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "bing-bong";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
