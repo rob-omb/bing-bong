@@ -1,0 +1,1026 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D467F68A2B4E8819007211DC /* bing_bongApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D467F6892B4E8819007211DC /* bing_bongApp.swift */; };
+		D467F68C2B4E8819007211DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D467F68B2B4E8819007211DC /* ContentView.swift */; };
+		D467F68E2B4E881B007211DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D467F68D2B4E881B007211DC /* Assets.xcassets */; };
+		D467F6912B4E881B007211DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D467F6902B4E881B007211DC /* Preview Assets.xcassets */; };
+		D467F69B2B4E881B007211DC /* bing_bongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D467F69A2B4E881B007211DC /* bing_bongTests.swift */; };
+		D467F6A52B4E881B007211DC /* bing_bongUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D467F6A42B4E881B007211DC /* bing_bongUITests.swift */; };
+		D467F6A72B4E881B007211DC /* bing_bongUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D467F6A62B4E881B007211DC /* bing_bongUITestsLaunchTests.swift */; };
+		D467F6AD2B4E881B007211DC /* bing-bong Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D467F6AC2B4E881B007211DC /* bing-bong Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D467F6B22B4E881B007211DC /* bing_bongApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D467F6B12B4E881B007211DC /* bing_bongApp.swift */; };
+		D467F6B42B4E881B007211DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D467F6B32B4E881B007211DC /* ContentView.swift */; };
+		D467F6B62B4E881D007211DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D467F6B52B4E881D007211DC /* Assets.xcassets */; };
+		D467F6B92B4E881D007211DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D467F6B82B4E881D007211DC /* Preview Assets.xcassets */; };
+		D467F6C32B4E881D007211DC /* bing_bong_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D467F6C22B4E881D007211DC /* bing_bong_Watch_AppTests.swift */; };
+		D467F6CD2B4E881D007211DC /* bing_bong_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D467F6CC2B4E881D007211DC /* bing_bong_Watch_AppUITests.swift */; };
+		D467F6CF2B4E881D007211DC /* bing_bong_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D467F6CE2B4E881D007211DC /* bing_bong_Watch_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D467F6972B4E881B007211DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D467F67E2B4E8819007211DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D467F6852B4E8819007211DC;
+			remoteInfo = "bing-bong";
+		};
+		D467F6A12B4E881B007211DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D467F67E2B4E8819007211DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D467F6852B4E8819007211DC;
+			remoteInfo = "bing-bong";
+		};
+		D467F6AE2B4E881B007211DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D467F67E2B4E8819007211DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D467F6AB2B4E881B007211DC;
+			remoteInfo = "bing-bong Watch App";
+		};
+		D467F6BF2B4E881D007211DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D467F67E2B4E8819007211DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D467F6AB2B4E881B007211DC;
+			remoteInfo = "bing-bong Watch App";
+		};
+		D467F6C92B4E881D007211DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D467F67E2B4E8819007211DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D467F6AB2B4E881B007211DC;
+			remoteInfo = "bing-bong Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D467F6D52B4E881D007211DC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D467F6AD2B4E881B007211DC /* bing-bong Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D467F6862B4E8819007211DC /* bing-bong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bing-bong.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D467F6892B4E8819007211DC /* bing_bongApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bing_bongApp.swift; sourceTree = "<group>"; };
+		D467F68B2B4E8819007211DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D467F68D2B4E881B007211DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D467F6902B4E881B007211DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D467F6962B4E881B007211DC /* bing-bongTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bing-bongTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D467F69A2B4E881B007211DC /* bing_bongTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bing_bongTests.swift; sourceTree = "<group>"; };
+		D467F6A02B4E881B007211DC /* bing-bongUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bing-bongUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D467F6A42B4E881B007211DC /* bing_bongUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bing_bongUITests.swift; sourceTree = "<group>"; };
+		D467F6A62B4E881B007211DC /* bing_bongUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bing_bongUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D467F6AC2B4E881B007211DC /* bing-bong Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bing-bong Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D467F6B12B4E881B007211DC /* bing_bongApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bing_bongApp.swift; sourceTree = "<group>"; };
+		D467F6B32B4E881B007211DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D467F6B52B4E881D007211DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D467F6B82B4E881D007211DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D467F6BE2B4E881D007211DC /* bing-bong Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bing-bong Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D467F6C22B4E881D007211DC /* bing_bong_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bing_bong_Watch_AppTests.swift; sourceTree = "<group>"; };
+		D467F6C82B4E881D007211DC /* bing-bong Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bing-bong Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D467F6CC2B4E881D007211DC /* bing_bong_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bing_bong_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		D467F6CE2B4E881D007211DC /* bing_bong_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bing_bong_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D467F6832B4E8819007211DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D467F6932B4E881B007211DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D467F69D2B4E881B007211DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D467F6A92B4E881B007211DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D467F6BB2B4E881D007211DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D467F6C52B4E881D007211DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D467F67D2B4E8819007211DC = {
+			isa = PBXGroup;
+			children = (
+				D467F6882B4E8819007211DC /* bing-bong */,
+				D467F6992B4E881B007211DC /* bing-bongTests */,
+				D467F6A32B4E881B007211DC /* bing-bongUITests */,
+				D467F6B02B4E881B007211DC /* bing-bong Watch App */,
+				D467F6C12B4E881D007211DC /* bing-bong Watch AppTests */,
+				D467F6CB2B4E881D007211DC /* bing-bong Watch AppUITests */,
+				D467F6872B4E8819007211DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D467F6872B4E8819007211DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D467F6862B4E8819007211DC /* bing-bong.app */,
+				D467F6962B4E881B007211DC /* bing-bongTests.xctest */,
+				D467F6A02B4E881B007211DC /* bing-bongUITests.xctest */,
+				D467F6AC2B4E881B007211DC /* bing-bong Watch App.app */,
+				D467F6BE2B4E881D007211DC /* bing-bong Watch AppTests.xctest */,
+				D467F6C82B4E881D007211DC /* bing-bong Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D467F6882B4E8819007211DC /* bing-bong */ = {
+			isa = PBXGroup;
+			children = (
+				D467F6892B4E8819007211DC /* bing_bongApp.swift */,
+				D467F68B2B4E8819007211DC /* ContentView.swift */,
+				D467F68D2B4E881B007211DC /* Assets.xcassets */,
+				D467F68F2B4E881B007211DC /* Preview Content */,
+			);
+			path = "bing-bong";
+			sourceTree = "<group>";
+		};
+		D467F68F2B4E881B007211DC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D467F6902B4E881B007211DC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D467F6992B4E881B007211DC /* bing-bongTests */ = {
+			isa = PBXGroup;
+			children = (
+				D467F69A2B4E881B007211DC /* bing_bongTests.swift */,
+			);
+			path = "bing-bongTests";
+			sourceTree = "<group>";
+		};
+		D467F6A32B4E881B007211DC /* bing-bongUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D467F6A42B4E881B007211DC /* bing_bongUITests.swift */,
+				D467F6A62B4E881B007211DC /* bing_bongUITestsLaunchTests.swift */,
+			);
+			path = "bing-bongUITests";
+			sourceTree = "<group>";
+		};
+		D467F6B02B4E881B007211DC /* bing-bong Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				D467F6B12B4E881B007211DC /* bing_bongApp.swift */,
+				D467F6B32B4E881B007211DC /* ContentView.swift */,
+				D467F6B52B4E881D007211DC /* Assets.xcassets */,
+				D467F6B72B4E881D007211DC /* Preview Content */,
+			);
+			path = "bing-bong Watch App";
+			sourceTree = "<group>";
+		};
+		D467F6B72B4E881D007211DC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D467F6B82B4E881D007211DC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D467F6C12B4E881D007211DC /* bing-bong Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D467F6C22B4E881D007211DC /* bing_bong_Watch_AppTests.swift */,
+			);
+			path = "bing-bong Watch AppTests";
+			sourceTree = "<group>";
+		};
+		D467F6CB2B4E881D007211DC /* bing-bong Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D467F6CC2B4E881D007211DC /* bing_bong_Watch_AppUITests.swift */,
+				D467F6CE2B4E881D007211DC /* bing_bong_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "bing-bong Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D467F6852B4E8819007211DC /* bing-bong */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D467F6D62B4E881D007211DC /* Build configuration list for PBXNativeTarget "bing-bong" */;
+			buildPhases = (
+				D467F6822B4E8819007211DC /* Sources */,
+				D467F6832B4E8819007211DC /* Frameworks */,
+				D467F6842B4E8819007211DC /* Resources */,
+				D467F6D52B4E881D007211DC /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D467F6AF2B4E881B007211DC /* PBXTargetDependency */,
+			);
+			name = "bing-bong";
+			productName = "bing-bong";
+			productReference = D467F6862B4E8819007211DC /* bing-bong.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D467F6952B4E881B007211DC /* bing-bongTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D467F6D92B4E881D007211DC /* Build configuration list for PBXNativeTarget "bing-bongTests" */;
+			buildPhases = (
+				D467F6922B4E881B007211DC /* Sources */,
+				D467F6932B4E881B007211DC /* Frameworks */,
+				D467F6942B4E881B007211DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D467F6982B4E881B007211DC /* PBXTargetDependency */,
+			);
+			name = "bing-bongTests";
+			productName = "bing-bongTests";
+			productReference = D467F6962B4E881B007211DC /* bing-bongTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D467F69F2B4E881B007211DC /* bing-bongUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D467F6DC2B4E881D007211DC /* Build configuration list for PBXNativeTarget "bing-bongUITests" */;
+			buildPhases = (
+				D467F69C2B4E881B007211DC /* Sources */,
+				D467F69D2B4E881B007211DC /* Frameworks */,
+				D467F69E2B4E881B007211DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D467F6A22B4E881B007211DC /* PBXTargetDependency */,
+			);
+			name = "bing-bongUITests";
+			productName = "bing-bongUITests";
+			productReference = D467F6A02B4E881B007211DC /* bing-bongUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D467F6AB2B4E881B007211DC /* bing-bong Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D467F6D22B4E881D007211DC /* Build configuration list for PBXNativeTarget "bing-bong Watch App" */;
+			buildPhases = (
+				D467F6A82B4E881B007211DC /* Sources */,
+				D467F6A92B4E881B007211DC /* Frameworks */,
+				D467F6AA2B4E881B007211DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "bing-bong Watch App";
+			productName = "bing-bong Watch App";
+			productReference = D467F6AC2B4E881B007211DC /* bing-bong Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D467F6BD2B4E881D007211DC /* bing-bong Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D467F6DF2B4E881D007211DC /* Build configuration list for PBXNativeTarget "bing-bong Watch AppTests" */;
+			buildPhases = (
+				D467F6BA2B4E881D007211DC /* Sources */,
+				D467F6BB2B4E881D007211DC /* Frameworks */,
+				D467F6BC2B4E881D007211DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D467F6C02B4E881D007211DC /* PBXTargetDependency */,
+			);
+			name = "bing-bong Watch AppTests";
+			productName = "bing-bong Watch AppTests";
+			productReference = D467F6BE2B4E881D007211DC /* bing-bong Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D467F6C72B4E881D007211DC /* bing-bong Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D467F6E22B4E881D007211DC /* Build configuration list for PBXNativeTarget "bing-bong Watch AppUITests" */;
+			buildPhases = (
+				D467F6C42B4E881D007211DC /* Sources */,
+				D467F6C52B4E881D007211DC /* Frameworks */,
+				D467F6C62B4E881D007211DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D467F6CA2B4E881D007211DC /* PBXTargetDependency */,
+			);
+			name = "bing-bong Watch AppUITests";
+			productName = "bing-bong Watch AppUITests";
+			productReference = D467F6C82B4E881D007211DC /* bing-bong Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D467F67E2B4E8819007211DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					D467F6852B4E8819007211DC = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					D467F6952B4E881B007211DC = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = D467F6852B4E8819007211DC;
+					};
+					D467F69F2B4E881B007211DC = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = D467F6852B4E8819007211DC;
+					};
+					D467F6AB2B4E881B007211DC = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					D467F6BD2B4E881D007211DC = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = D467F6AB2B4E881B007211DC;
+					};
+					D467F6C72B4E881D007211DC = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = D467F6AB2B4E881B007211DC;
+					};
+				};
+			};
+			buildConfigurationList = D467F6812B4E8819007211DC /* Build configuration list for PBXProject "bing-bong" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D467F67D2B4E8819007211DC;
+			productRefGroup = D467F6872B4E8819007211DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D467F6852B4E8819007211DC /* bing-bong */,
+				D467F6952B4E881B007211DC /* bing-bongTests */,
+				D467F69F2B4E881B007211DC /* bing-bongUITests */,
+				D467F6AB2B4E881B007211DC /* bing-bong Watch App */,
+				D467F6BD2B4E881D007211DC /* bing-bong Watch AppTests */,
+				D467F6C72B4E881D007211DC /* bing-bong Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D467F6842B4E8819007211DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D467F6912B4E881B007211DC /* Preview Assets.xcassets in Resources */,
+				D467F68E2B4E881B007211DC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D467F6942B4E881B007211DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D467F69E2B4E881B007211DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D467F6AA2B4E881B007211DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D467F6B92B4E881D007211DC /* Preview Assets.xcassets in Resources */,
+				D467F6B62B4E881D007211DC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D467F6BC2B4E881D007211DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D467F6C62B4E881D007211DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D467F6822B4E8819007211DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D467F68C2B4E8819007211DC /* ContentView.swift in Sources */,
+				D467F68A2B4E8819007211DC /* bing_bongApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D467F6922B4E881B007211DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D467F69B2B4E881B007211DC /* bing_bongTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D467F69C2B4E881B007211DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D467F6A72B4E881B007211DC /* bing_bongUITestsLaunchTests.swift in Sources */,
+				D467F6A52B4E881B007211DC /* bing_bongUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D467F6A82B4E881B007211DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D467F6B42B4E881B007211DC /* ContentView.swift in Sources */,
+				D467F6B22B4E881B007211DC /* bing_bongApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D467F6BA2B4E881D007211DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D467F6C32B4E881D007211DC /* bing_bong_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D467F6C42B4E881D007211DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D467F6CF2B4E881D007211DC /* bing_bong_Watch_AppUITestsLaunchTests.swift in Sources */,
+				D467F6CD2B4E881D007211DC /* bing_bong_Watch_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D467F6982B4E881B007211DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D467F6852B4E8819007211DC /* bing-bong */;
+			targetProxy = D467F6972B4E881B007211DC /* PBXContainerItemProxy */;
+		};
+		D467F6A22B4E881B007211DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D467F6852B4E8819007211DC /* bing-bong */;
+			targetProxy = D467F6A12B4E881B007211DC /* PBXContainerItemProxy */;
+		};
+		D467F6AF2B4E881B007211DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D467F6AB2B4E881B007211DC /* bing-bong Watch App */;
+			targetProxy = D467F6AE2B4E881B007211DC /* PBXContainerItemProxy */;
+		};
+		D467F6C02B4E881D007211DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D467F6AB2B4E881B007211DC /* bing-bong Watch App */;
+			targetProxy = D467F6BF2B4E881D007211DC /* PBXContainerItemProxy */;
+		};
+		D467F6CA2B4E881D007211DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D467F6AB2B4E881B007211DC /* bing-bong Watch App */;
+			targetProxy = D467F6C92B4E881D007211DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D467F6D02B4E881D007211DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D467F6D12B4E881D007211DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		D467F6D32B4E881D007211DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"bing-bong Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 552CB4ZF48;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "bing-bong";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.keyboardgut.bing-bong";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keyboardgut.bing-bong.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		D467F6D42B4E881D007211DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"bing-bong Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 552CB4ZF48;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "bing-bong";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.keyboardgut.bing-bong";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keyboardgut.bing-bong.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		D467F6D72B4E881D007211DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"bing-bong/Preview Content\"";
+				DEVELOPMENT_TEAM = 552CB4ZF48;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "bing-bong";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keyboardgut.bing-bong";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D467F6D82B4E881D007211DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"bing-bong/Preview Content\"";
+				DEVELOPMENT_TEAM = 552CB4ZF48;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "bing-bong";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keyboardgut.bing-bong";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D467F6DA2B4E881D007211DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 552CB4ZF48;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keyboardgut.bing-bongTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bing-bong.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/bing-bong";
+			};
+			name = Debug;
+		};
+		D467F6DB2B4E881D007211DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 552CB4ZF48;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keyboardgut.bing-bongTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bing-bong.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/bing-bong";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D467F6DD2B4E881D007211DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 552CB4ZF48;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keyboardgut.bing-bongUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "bing-bong";
+			};
+			name = Debug;
+		};
+		D467F6DE2B4E881D007211DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 552CB4ZF48;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keyboardgut.bing-bongUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "bing-bong";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D467F6E02B4E881D007211DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 552CB4ZF48;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keyboardgut.bing-bong-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bing-bong Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/bing-bong Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		D467F6E12B4E881D007211DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 552CB4ZF48;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keyboardgut.bing-bong-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bing-bong Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/bing-bong Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		D467F6E32B4E881D007211DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 552CB4ZF48;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keyboardgut.bing-bong-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "bing-bong Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		D467F6E42B4E881D007211DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 552CB4ZF48;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keyboardgut.bing-bong-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "bing-bong Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D467F6812B4E8819007211DC /* Build configuration list for PBXProject "bing-bong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D467F6D02B4E881D007211DC /* Debug */,
+				D467F6D12B4E881D007211DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D467F6D22B4E881D007211DC /* Build configuration list for PBXNativeTarget "bing-bong Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D467F6D32B4E881D007211DC /* Debug */,
+				D467F6D42B4E881D007211DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D467F6D62B4E881D007211DC /* Build configuration list for PBXNativeTarget "bing-bong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D467F6D72B4E881D007211DC /* Debug */,
+				D467F6D82B4E881D007211DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D467F6D92B4E881D007211DC /* Build configuration list for PBXNativeTarget "bing-bongTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D467F6DA2B4E881D007211DC /* Debug */,
+				D467F6DB2B4E881D007211DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D467F6DC2B4E881D007211DC /* Build configuration list for PBXNativeTarget "bing-bongUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D467F6DD2B4E881D007211DC /* Debug */,
+				D467F6DE2B4E881D007211DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D467F6DF2B4E881D007211DC /* Build configuration list for PBXNativeTarget "bing-bong Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D467F6E02B4E881D007211DC /* Debug */,
+				D467F6E12B4E881D007211DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D467F6E22B4E881D007211DC /* Build configuration list for PBXNativeTarget "bing-bong Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D467F6E32B4E881D007211DC /* Debug */,
+				D467F6E42B4E881D007211DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D467F67E2B4E8819007211DC /* Project object */;
+}
