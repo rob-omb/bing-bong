@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
   @State var bpm: Double = 120.0
+  @State var viewID = 0
   @State var isPlaying: Bool = false
   @State var buttonIcon: Image = Image(systemName: "play.fill")
 
@@ -23,6 +24,7 @@ struct ContentView: View {
         action: { togglePlayPause() },
         label: { buttonIcon }
       )
+        .id(viewID)
         .padding(.bottom, 10.0)
         .font(.system(size: 100))
         .clipShape(Circle())
@@ -39,6 +41,7 @@ struct ContentView: View {
     if isPlaying {
       isPlaying = false
       buttonIcon = Image(systemName: "play.fill")
+      viewID += 1
     } else {
       isPlaying = true
       buttonIcon = Image(systemName: "play")
