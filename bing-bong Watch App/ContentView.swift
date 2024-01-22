@@ -8,43 +8,113 @@
 import SwiftUI
 
 struct ContentView: View {
-  @State var bpm: Double = 120.0
-  @State var viewID = 0
-  @State var isPlaying: Bool = false
-  @State var buttonIcon: Image = Image(systemName: "play.fill")
-
-  let rotato: Double = 60.0
+  @State private var bpm: Int  = 120
+  @State private var viewID: Int = 0
+  @State private var prevBpm: Int = 0
+  @State private var isEditing: Bool = false
+  @State private var isPlaying: Bool = false
+  @State private var buttonIcon: Image = Image(systemName: "play.fill")
 
   var body: some View {
     VStack(spacing: 0) {
-      Text("\(Int(bpm))")
-        .font(.system(size: 100))
-        .fontDesign(.monospaced)
-      Button(
-        action: { togglePlayPause() },
-        label: { buttonIcon }
-      )
+      if isEditing {
+        EditView(
+          bpm: $bpm,
+          prevBpm: $prevBpm,
+          isEditing: $isEditing
+        )
+      } else {
+        Text("\(bpm)")
+          .font(.system(size: 100))
+          .fontDesign(.monospaced)
+          .gesture(
+            TapGesture()
+              .onEnded { _ in
+                viewID += 1
+                prevBpm = bpm
+                isEditing = true
+                isPlaying = false
+                buttonIcon = Image(systemName: "play.fill")
+              }
+          )
+
+        Button(
+          action: { togglePlayPause() },
+          label: { buttonIcon }
+        )
         .id(viewID)
-        .padding(.bottom, 10.0)
+        .padding(.top, -10.0)
+        .padding(.bottom, 20.0)
         .font(.system(size: 100))
         .clipShape(Circle())
         .tint(.black)
         .aspectRatio(contentMode: .fill)
         .rotationEffect(Angle.degrees(isPlaying ? 60.0 : 0.0))
-        .animation(Animation.linear(duration: 60.0 / Double(bpm)).repeatForever(autoreverses: true), value: isPlaying)
+        .animation(.linear(duration: 60.0 / (Double(bpm))).repeatForever(autoreverses: true), value: isPlaying)
+        .sheet(isPresented: $isEditing) {
+          EditView(
+            bpm: $bpm,
+            prevBpm: $prevBpm,
+            isEditing: $isEditing
+          )
+        }
+      }
     }
-    .foregroundColor(.accentColor)
-    Spacer()
-  }
+      .foregroundColor(.accentColor)
+    }
 
   func togglePlayPause() {
     if isPlaying {
+      viewID += 1
       isPlaying = false
       buttonIcon = Image(systemName: "play.fill")
-      viewID += 1
     } else {
       isPlaying = true
       buttonIcon = Image(systemName: "play")
+    }
+  }
+}
+
+
+struct EditView: View {
+  @Binding var bpm: Int
+  @Binding var prevBpm: Int
+  @Binding var isEditing: Bool
+
+  var body: some View {
+    VStack (alignment: .leading, spacing: 7) {
+      Text("Edit BPM")
+        .font(.headline)
+
+      Picker("Select Value", selection: $bpm) {
+        ForEach(0..<421) {
+          Text("\($0)")
+        }
+      }
+      .labelsHidden()
+      .focusable()
+      .digitalCrownRotation(
+        detent: $bpm,
+        from: 0,
+        through: 420,
+        by: 1,
+        sensitivity: .low,
+        isHapticFeedbackEnabled: true
+      )
+
+      HStack {
+        Button("Back") {
+          isEditing.toggle()
+          bpm = prevBpm
+        }.background(.red)
+          .foregroundColor(.black)
+          .clipShape(RoundedRectangle(cornerRadius: 12.0))
+        Button("Done") {
+          isEditing.toggle()
+        }
+          .accentColor(.green)
+      }
+        .buttonBorderShape(.roundedRectangle)
     }
   }
 }
