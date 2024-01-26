@@ -75,7 +75,6 @@ struct ContentView: View {
   }
 }
 
-
 struct EditView: View {
   @Binding var bpm: Int
   @Binding var prevBpm: Int
@@ -86,35 +85,38 @@ struct EditView: View {
       Text("Edit BPM")
         .font(.headline)
 
-      Picker("Select Value", selection: $bpm) {
+      Picker("Edit BPM", selection: $bpm) {
         ForEach(0..<421) {
           Text("\($0)")
         }
       }
-      .labelsHidden()
-      .focusable()
-      .digitalCrownRotation(
-        detent: $bpm,
-        from: 0,
-        through: 420,
-        by: 1,
-        sensitivity: .low,
-        isHapticFeedbackEnabled: true
-      )
+        .labelsHidden()
+        .focusable()
+        .digitalCrownRotation(
+          detent: $bpm,
+          from: 0,
+          through: 420,
+          by: 1,
+          sensitivity: .medium,
+          isHapticFeedbackEnabled: true
+        )
+        .frame(height: 75)
+        .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
 
-      HStack {
-        Button("Back") {
-          isEditing.toggle()
-          bpm = prevBpm
-        }.background(.red)
-          .foregroundColor(.black)
-          .clipShape(RoundedRectangle(cornerRadius: 12.0))
-        Button("Done") {
-          isEditing.toggle()
-        }
-          .accentColor(.green)
+      Button("Done") {
+        isEditing.toggle()
       }
-        .buttonBorderShape(.roundedRectangle)
+        .frame(height: 40.0)
+        .background(Color.accentColor)
+        .foregroundColor(.black)
+        .clipShape(Capsule())
+
+      Button("Cancel") {
+        isEditing.toggle()
+        bpm = prevBpm
+      }
+      .frame(height: 40.0)
+      .clipShape(Capsule())
     }
   }
 }
