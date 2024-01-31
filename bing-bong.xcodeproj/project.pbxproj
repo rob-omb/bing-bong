@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D419F6942B6A01DD00FE297E /* sample-tick.wav in Resources */ = {isa = PBXBuildFile; fileRef = D419F6912B69DBEA00FE297E /* sample-tick.wav */; };
 		D467F68A2B4E8819007211DC /* bing_bongApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D467F6892B4E8819007211DC /* bing_bongApp.swift */; };
 		D467F68C2B4E8819007211DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D467F68B2B4E8819007211DC /* ContentView.swift */; };
 		D467F68E2B4E881B007211DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D467F68D2B4E881B007211DC /* Assets.xcassets */; };
@@ -77,6 +78,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D419F6912B69DBEA00FE297E /* sample-tick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "sample-tick.wav"; sourceTree = "<group>"; };
 		D467F6862B4E8819007211DC /* bing-bong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bing-bong.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D467F6892B4E8819007211DC /* bing_bongApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bing_bongApp.swift; sourceTree = "<group>"; };
 		D467F68B2B4E8819007211DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -145,6 +147,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D419F6982B6A022C00FE297E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D419F6912B69DBEA00FE297E /* sample-tick.wav */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		D467F67D2B4E8819007211DC = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +222,7 @@
 			children = (
 				D467F6B12B4E881B007211DC /* bing_bongApp.swift */,
 				D467F6B32B4E881B007211DC /* ContentView.swift */,
+				D419F6982B6A022C00FE297E /* Resources */,
 				D467F6B52B4E881D007211DC /* Assets.xcassets */,
 				D467F6B72B4E881D007211DC /* Preview Content */,
 			);
@@ -441,6 +452,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D419F6942B6A01DD00FE297E /* sample-tick.wav in Resources */,
 				D467F6B92B4E881D007211DC /* Preview Assets.xcassets in Resources */,
 				D467F6B62B4E881D007211DC /* Assets.xcassets in Resources */,
 			);
@@ -665,6 +677,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"bing-bong Watch App/Preview Content\"";
@@ -682,6 +695,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.keyboardgut.bing-bong.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -696,6 +710,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"bing-bong Watch App/Preview Content\"";
@@ -713,6 +728,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.keyboardgut.bing-bong.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
