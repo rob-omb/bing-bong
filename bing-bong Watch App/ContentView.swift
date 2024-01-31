@@ -6,14 +6,43 @@
 //
 
 import SwiftUI
+import AVFoundation
+
+class AudioPlayerManager: NSObject, AVAudioPlayerDelegate {
+  var audioPlayer: AVAudioPlayer?
+
+  func setupAudioPlayer(withURL url: URL) {
+    DispatchQueue.global(qos: .userInitiated).async {
+      do {
+        self.audioPlayer = try AVAudioPlayer(contentsOf: url)
+        self.audioPlayer?.delegate = self
+        self.audioPlayer?.prepareToPlay()
+      } catch {
+        print("Error setting up audio player: \(error.localizedDescription)")
+      }
+    }
+  }
+
+  func playAudio() {
+    DispatchQueue.global(qos: .userInitiated).async {
+      self.audioPlayer?.play()
+    }
+  }
+}
 
 struct ContentView: View {
   @State private var bpm: Int  = 120
+  @State private var timer: Timer?
   @State private var viewID: Int = 0
   @State private var prevBpm: Int = 0
   @State private var isEditing: Bool = false
   @State private var isPlaying: Bool = false
   @State private var buttonIcon: Image = Image(systemName: "play.fill")
+  @State private var audioPlayerManager = AudioPlayerManager()
+
+  private var tickSoundURL: URL {
+    return Bundle.main.url(forResource: "sample-tick", withExtension: "wav")!
+  }
 
   var body: some View {
     VStack(spacing: 0) {
@@ -61,16 +90,38 @@ struct ContentView: View {
       }
     }
       .foregroundColor(.accentColor)
+      .onAppear {
+        print(tickSoundURL)
+        configureAudioSession()
+        audioPlayerManager.setupAudioPlayer(withURL: tickSoundURL)
+      }
+  }
+
+  func configureAudioSession() {
+    do {
+      let session = AVAudioSession.sharedInstance()
+      try session.setCategory(.playback, mode: .default, options: [.mixWithOthers])
+      try session.setActive(true)
+    } catch {
+      print("Error setting up audio session: \(error.localizedDescription)")
     }
+  }
 
   func togglePlayPause() {
     if isPlaying {
       viewID += 1
       isPlaying = false
+      timer?.invalidate()
+      timer = nil
       buttonIcon = Image(systemName: "play.fill")
     } else {
       isPlaying = true
       buttonIcon = Image(systemName: "play")
+      timer?.invalidate()
+
+      timer = Timer.scheduledTimer(withTimeInterval: Double(60.0 / Double(bpm)), repeats: true) { _ in
+        audioPlayerManager.playAudio()
+      }
     }
   }
 }
@@ -101,7 +152,7 @@ struct EditView: View {
           isHapticFeedbackEnabled: true
         )
         .frame(height: 75)
-        .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
+        .font(.title2)
 
       Button("Done") {
         isEditing.toggle()
