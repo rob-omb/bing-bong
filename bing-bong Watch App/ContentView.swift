@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WatchKit
 import AVFoundation
 
 class AudioPlayerManager: NSObject, AVAudioPlayerDelegate {
@@ -47,6 +48,8 @@ struct ContentView: View {
   private var tickSoundURL: URL {
     return Bundle.main.url(forResource: "sample-tick", withExtension: "wav")!
   }
+
+  private let interfaceDevice = WKInterfaceDevice.current()
 
   var body: some View {
     VStack(spacing: 0) {
@@ -110,6 +113,10 @@ struct ContentView: View {
     }
   }
 
+  func triggerHapticFeedback() {
+    interfaceDevice.play(.click)
+  }
+
   func togglePlayPause() {
     if isPlaying {
       viewID += 1
@@ -124,6 +131,7 @@ struct ContentView: View {
       timer?.invalidate()
       timer = Timer.scheduledTimer(withTimeInterval: Double(60.0 / Double(bpm)), repeats: true) { _ in
         audioPlayerManager.playAudio()
+        triggerHapticFeedback()
       }
     }
   }
