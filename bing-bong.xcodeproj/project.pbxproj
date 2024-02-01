@@ -79,6 +79,7 @@
 
 /* Begin PBXFileReference section */
 		D419F6912B69DBEA00FE297E /* sample-tick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "sample-tick.wav"; sourceTree = "<group>"; };
+		D419F69B2B6B11DD00FE297E /* bing-bong-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "bing-bong-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D467F6862B4E8819007211DC /* bing-bong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bing-bong.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D467F6892B4E8819007211DC /* bing_bongApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bing_bongApp.swift; sourceTree = "<group>"; };
 		D467F68B2B4E8819007211DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -220,6 +221,7 @@
 		D467F6B02B4E881B007211DC /* bing-bong Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				D419F69B2B6B11DD00FE297E /* bing-bong-Watch-App-Info.plist */,
 				D467F6B12B4E881B007211DC /* bing_bongApp.swift */,
 				D467F6B32B4E881B007211DC /* ContentView.swift */,
 				D419F6982B6A022C00FE297E /* Resources */,
@@ -684,6 +686,7 @@
 				DEVELOPMENT_TEAM = 552CB4ZF48;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "bing-bong-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "bing-bong";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.keyboardgut.bing-bong";
@@ -717,6 +720,7 @@
 				DEVELOPMENT_TEAM = 552CB4ZF48;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "bing-bong-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "bing-bong";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.keyboardgut.bing-bong";
