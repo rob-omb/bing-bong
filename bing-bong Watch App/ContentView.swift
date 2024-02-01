@@ -28,6 +28,10 @@ class AudioPlayerManager: NSObject, AVAudioPlayerDelegate {
       self.audioPlayer?.play()
     }
   }
+
+  func stopAudio() {
+    self.audioPlayer?.stop()
+  }
 }
 
 struct ContentView: View {
@@ -91,7 +95,6 @@ struct ContentView: View {
     }
       .foregroundColor(.accentColor)
       .onAppear {
-        print(tickSoundURL)
         configureAudioSession()
         audioPlayerManager.setupAudioPlayer(withURL: tickSoundURL)
       }
@@ -114,11 +117,11 @@ struct ContentView: View {
       timer?.invalidate()
       timer = nil
       buttonIcon = Image(systemName: "play.fill")
+      audioPlayerManager.stopAudio()
     } else {
       isPlaying = true
       buttonIcon = Image(systemName: "play")
       timer?.invalidate()
-
       timer = Timer.scheduledTimer(withTimeInterval: Double(60.0 / Double(bpm)), repeats: true) { _ in
         audioPlayerManager.playAudio()
       }
@@ -137,7 +140,7 @@ struct EditView: View {
         .font(.headline)
 
       Picker("Edit BPM", selection: $bpm) {
-        ForEach(0..<421) {
+        ForEach(0..<301) {
           Text("\($0)")
         }
       }
